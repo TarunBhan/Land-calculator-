@@ -1,0 +1,205 @@
+<html>
+    <head>
+<title>api</title>
+<style>
+    
+@import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css');
+input,select{
+    width: 250px;
+border:1px solid lightblue;
+outline: none;
+padding: 0.5em;
+font-size: 15px;
+}
+body{
+      background-color: white;
+      background-image: url("https://miro.medium.com/max/3840/1*2bf303U0V7AH3wP6ezUZ5g.jpeg");
+  background-size:cover;
+      letter-spacing: 1px;
+  }
+select{
+    margin-left:10px;
+    letter-spacing: 2px;
+    width: 100px;
+}
+span{
+    font-size: 3em;
+    font-weight: 800;
+    color: rgb(248, 0, 0);
+}
+label{
+    background-color: red;
+    color: white;
+    padding: 4px;
+    font-size: 25px;
+    margin-left:60px;
+}
+footer {
+	position: fixed;
+	width: 100%;
+	left: 0;
+	bottom: 0;
+	background-color: rgb(70, 169, 235);
+	color: white;
+	text-align: center;
+}
+.api1{
+      align-self:center;
+      height:30%;   
+       width: 30%;
+      border-collapse: separate;
+      letter-spacing: 4.5px;
+      background-color:rgba(247, 247, 247, 0.226); 
+ margin-left:660px;
+ margin-top:250px;
+ padding:35px;
+
+  }
+  
+
+.socialbtns .fa {
+	color: rgb(255, 255, 255);
+	text-shadow: 1px 1px 0px #000,
+			1px -1px 0px rgb(2, 2, 2),
+			-1px 1px 0px #000,
+			-1px -1px 0px #000;
+	-webkit-text-shadow: 1px 1px 0px #000,
+			1px -1px 0px #000,
+			-1px 1px 0px #000,
+			-1px -1px 0px #000;
+	-moz-text-shadow: 1px 1px 0px #000,
+			1px -1px 0px #000,
+			-1px 1px 0px #000,
+			-1px -1px 0px #000;
+	-o-text-shadow: 1px 1px 0px #000,
+			1px -1px 0px #000,
+			-1px 1px 0px #000,
+			-1px -1px 0px #000;
+	transition: all ease-out 0.5s;
+	-moz-transition: all ease-out 0.5s;
+	-webkit-transition: all ease-out 0.5s;
+	-o-transition: all ease-out 0.5s;
+}
+a, a:hover {
+	color: rgb(241, 233, 233);
+	text-decoration: none;
+	padding: 20px;
+    font-size:40px
+}
+
+.socialbtnsbtnsbtns, .socialbtnsbtnsbtns ul, .socialbtnsbtnsbtns li {
+	margin: 0;
+	padding: 15px;
+}
+
+.socialbtnsbtnsbtns li {
+    list-style: none outside none;
+    display: inline-block;
+}
+
+.socialbtns li {
+    list-style: none outside none;
+    display: inline-block;
+}
+
+
+.socialbtns .fa:hover {
+	color: #000;
+	text-shadow: 1px 1px 0px #fff,
+			1px -1px 0px #fff,
+			-1px 1px 0px #fff,
+			-1px -1px 0px #fff;
+	-webkit-text-shadow: 1px 1px 0px #fff,
+			1px -1px 0px #fff,
+			-1px 1px 0px #fff,
+			-1px -1px 0px #fff;
+	-moz-text-shadow: 1px 1px 0px #fff,
+			1px -1px 0px #fff,
+			-1px 1px 0px #fff,
+			-1px -1px 0px #fff;
+	-o-text-shadow: 1px 1px 0px #fff,
+			1px -1px 0px #fff,
+			-1px 1px 0px #fff,
+			-1px -1px 0px #fff;
+	transition: all ease 0.5s;
+	-moz-transition: all ease-in 0.5s;
+	-webkit-transition: all ease-in 0.5s;
+	-o-transition: all ease-in 0.5s;
+}
+.socialbtns{
+    font-size: 35px;
+    margin-top: 90px;
+}
+</style>
+    </head>
+    <body> <div  class="api1" >
+            <label> Convert Currency</label><br><br>
+       <text>FROM</text> <input type="number"/ placeholder="WIRTE THE CURRENCY">
+        <select>
+         <!---- <option value="Currency">Currency</option>-->
+        </select>
+        <br>
+        
+            <span>&nbsp;<b>=</b></span>
+        
+        <div>
+            <text>
+                TO &nbsp;&nbsp;&nbsp;
+            </text>
+            <input type="number" placeholder="CONVERTED CURRENCY" >
+            <select>
+                <!--<option value="Currency">Currency</option>-->
+            </select>
+        </div></div>
+        <div align="center" class="socialbtns">
+<ul>
+<li><a href="https://www.facebook.com/profile.php?id=100008469344465" class="fa fa-lg fa-facebook"></a></li>
+<li><a href="#" class="fa fa-lg fa-twitter"></a></li>
+<li><a href="#" class="fa fa-lg fa-google-plus"></a></li>
+<li><a href="https://github.com/TarunBhan" class="fa fa-lg fa-github"></a></li>
+<li><a href="#" class="fa fa-lg fa-pinterest"></a></li>
+<li><a href="https://www.linkedin.com/in/tarun-bhan-singh-676a6b194/" class="fa fa-lg fa-linkedin"></a></li>
+<li><a href="https://www.instagram.com/tarun_bhan_/" class="fa fa-lg fa-instagram"></a></li>
+<li><a href="#" class="fa fa-lg fa-youtube"></a></li>
+</ul>
+</div>
+        <footer>
+            <br/>
+
+
+            <p>Copyright &copy; 2021 CURRENCY UPGRADES.</p>
+        </footer>
+<script>
+    const select= document.querySelectorAll('select');
+    const input= document.querySelectorAll('input');
+    const API_URL="http://api.exchangeratesapi.io/v1/latest?access_key=10c770a82c9d9ecdf4b909d99bfe194d&format=1";
+    let html='';
+ async function Currency()
+{
+    const res= await fetch(API_URL);
+    const data= await res.json();
+   
+    const arrKeys= Object.keys(data.rates); 
+    const rates=data.rates;
+  console.log(rates)
+ // console.log(arrKeys)
+    arrKeys.map(item =>{
+        return html += `<option value=${item}>${item}</option>`;
+    });
+   
+    for(let i=0; i<select.length;i++)
+    {
+        select[i].innerHTML = html;
+    }
+    console.log(select[1].value)
+   input[0].addEventListener('keyup',()=>{
+input[1].value=input[0].value * rates[select[1].value] / rates[select[0].value];
+   });
+    input[1].addEventListener('keyup',()=>{
+input[0].value=input[1].value* rates[select[0].value] / rates[select[1].value];
+    });
+};
+Currency();
+</script>
+</body>
+</html>

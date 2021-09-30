@@ -1,0 +1,169 @@
+    <html>
+    <head>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta name="viewimport" content="width=device-width,initial-scala=0.1">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js">
+    </script>
+        <title>CONVERT EVERYTHING</title>
+        <link rel="stylesheet" type="text/css" href="stylecss.css"/> 
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;1,200&display=swap" rel="stylesheet">
+        </head>
+        <body>
+        
+            </script>
+        <section class="header">
+        <title>Land converter</title>
+            <nav>
+            <a href ="#" ><img src="lc1.jpg"></a>
+        <div class="nav-links">
+        <ul class="a">
+        <li><a href="#" class="active">HOME</a></li>
+            <li><a href="#">IMFORMATION</a></li>
+        <li> <a href="#" >ABOUT US</a></li>
+        <li><a href="home.html">BACK</a></li>
+        </ul>
+    </div>
+    </nav>
+    <div class="text-box">
+        <h1>CALCULATIONS AT YOUR EASE</h1>
+        <P>IT IS BASICALLY A TYPE OF CONVERTOR IN WHICH YOU JUST DIMENSION AND CONVERT IT INTO THE </P>
+
+    </div>
+    <section>
+        <a href="#calc">
+        <div class="scroll-down" >
+    <button class="btn">Calculate</button></a>
+    &nbsp;&nbsp;&nbsp;&nbsp;<a href="1.html">
+    <button  class="btn">Currency Convert</button>
+      </a>  </div>
+    </section>
+    </section>
+    
+    <section id="calc">
+    <div class="container">
+        <table class="t1">
+        <h2 class="c"><text align="center">Convert Your Length</text></h2>
+        <tr><td><b>Numbers</b></td><td>
+        <input type="number"  placeholder="NUMBER IN FEET" id ="i0" class="input"/></td> </tr>
+<tr><td><b>Inches</b></td>
+           <td> <input type="text" id="i1"/>
+           </td>
+        </tr>
+        <tr><td><b>Yards</b></td>
+            <td> <input type="text" id="i2"/>
+            </td>
+         </tr>
+         <tr><td><b>Miles</b></td>
+            <td> <input type="text" id="i6"/>
+            </td>`
+         </tr>
+         <tr><td><b>Meter</b></td>
+            <td> <input type="text" id="i4"/>
+            </td>
+         </tr>
+         <tr> <td>
+             <button id="result" ><B>CONVERT</B></button>
+            </td><form>
+            <td>           <input type="reset"  value="Reset"/></form>
+         </td>
+        </tr>
+        </table>
+        </div> 
+        <hr style="color:black;">
+        
+        <div class="container">
+            <table>
+            <h2 class="c"><text>Convert Your Area's</text></h2>
+            <tr><td><b>ACER'S</b></td><td>
+            <input type="number"  placeholder="AREA'S IN ACRES" id ="a0" /></td> </tr>
+    <tr><td><b>HECTARES</b></td>
+               <td> <input type="text" id="a1"/>
+               </td>
+            </tr>
+            <tr><td><b>SQUARE METER'S</b></td>
+                <td> <input type="text" id="a2"/>
+                </td>
+             </tr>
+             <tr><td><b>SQUARE FEET</b></td>
+                <td> <input type="text" id="a3"/>
+                </td>
+             </tr>
+             <tr> <td>
+                 <button id="result1" ><B>CONVERT</B></button>
+                </td><form>
+                <td>           <input type="reset"  value="Reset"/></form>
+             </td>
+            </tr>
+            </table>
+         
+<hr>
+ </section>
+ <div class='contact-action'>
+    <div class='item' onclick="actionToggle();"> + </div>
+    <span class='item'><i class="fa fa-github"></i></span>
+    <span class='item'> <i class="fa fa-facebook "></i> </span>
+    <span class='item'> <i class="fa fa-linkedin"></i> </span>
+    <span class='item'> <i class="fa fa-google"></i> </span>
+  </div>
+  <footer>
+  <p>Copyright &copy; 2021 CURRENCY UPGRADES.</p>
+            </footer>
+
+
+
+
+
+<script>
+
+    $(document).ready(function(){
+        $("#result").click(function(){
+
+        
+var x=$("#i0").val();
+if(x=="")
+{
+alert("ENTER THE VALUE");
+}
+var y= parseInt(x)/3;
+var r=parseInt(x) * 12;
+var m=parseFloat(x) / 3.280;
+var mi=parseFloat(x) / 5280;
+$("#i2").val(y+" Yards");
+$("#i4").val(m+" Meters");
+$("#i6").val(mi+" Miles");
+$('#i1').val(r+" Inches");
+})
+$("#result1").click(function(){
+
+var n=$("#a0").val();  
+if(n==""||n<0){
+if(n=="")
+{
+alert("ENTER THE VALUE");
+}
+else if(n<0)
+{
+alert("CAN'T BE NEGATIVE");
+}}
+else{
+var h=parseFloat(n)/2.47;
+var sm=parseFloat(n)* 4046.85;
+var sf=parseFloat(n)*43560;
+$("#a1").val(h+" Hectares");
+$("#a2").val(sm+" Square Meter");
+$("#a3").val(sf+" Square Feet");}
+});
+});
+function actionToggle() {
+  let action = document.querySelector('.contact-action');
+  action.classList.toggle('open');
+}
+</script>
+ 
+</body>
+    </html>
+    
